@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <title>MultiSZN — Case Study | Grayson Murray</title>
+  <meta name="description" content="Visual direction for an artist rollout and brand-aligned music campaign.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9">
+</head>
+<body>
+
+  <!-- Starfield canvas — fixed behind all content -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo" aria-label="Grayson Murray — Home">
+        <svg class="nav__logo-svg" viewBox="-10 860 900 640" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M406.67572,1096.50627l-48.10748-.01544-44.69989-1.2384-12.41223-.19116c-4.47839-.06891-8.90582-.01526-13.21295,1.03363-8.71002,2.12109-14.17737,9.5144-14.22736,18.37622-.03937,6.98383,3.24365,12.83746,9.47809,16.10321,10.53021,5.51599,20.26978,3.10272,32.36041,8.17053,6.04919,2.53552,9.56573,7.38977,10.85901,13.758,1.87152,9.21533,2.44598,18.20581,2.46375,27.77911l.10309,55.55212c.02594,13.98102-19.38196,20.12994-30.21088,22.62219l-3.034,13.46002c12.39941-2.15302,27.802-6.83527,36.81641-15.61029,5.11945-4.98358,8.84662-11.5401,8.84082-19.01379l-.05109-65.62854c-.00659-8.45514-1.14056-16.34467-3.09894-24.33154-2.25824-9.20953-8.2879-16.12323-16.86346-20.00781-16.8302-7.62384-36.52545-2.88239-34.83191-14.07928.40973-2.70898,2.93347-4.97119,6.3269-5.16254,6.65912-.37549,13.25732-.25629,20.0791-.07666l37.59912.99017,15.3252.20416,33.013-.00238,15.32538-.20123,37.20197-1.00934,18.98291-.07776c1.79132-.00732,3.5896.5943,5.12012,1.36017,2.47852,1.24017,3.46259,3.64868,3.08783,6.3006-.75763,5.36249-10.85193,6.12646-15.98962,6.95831-21.08679,3.41418-34.21008,7.86853-37.76349,31.78156-1.04181,7.01111-1.66486,13.71552-1.69177,20.87866l-.24445,64.9895c-.04199,11.16925-5.17542,21.02917-12.69073,29.04242-26.16681,27.90051-85.86694,35.91882-122.64148,38.21216l-2.98145,12.72852c37.02588-1.91406,84.35297-8.44904,116.6568-27.82208,18.70734-11.21912,34.26361-29.48297,34.36145-52.29529l.2912-67.89825c.03308-7.71228.92737-14.96338,2.80682-22.15131,4.43561-16.96423,26.36658-12.35724,41.23987-18.6051,7.59973-3.19244,11.84924-10.159,11.28864-18.39398-.49329-7.24585-4.95172-13.10315-11.75366-15.86066-4.72327-1.91486-9.60474-2.11102-14.86023-1.98419l-45.9635,1.10919-12.2973.24658Z"/>
+          <path fill="currentColor" d="M791.76007,1449.3972c-1.13489-11.2843-13.99542-17.89673-24.94226-17.76654-11.23187.13361-21.32855-3.59064-28.90094-11.9342-9.49304-10.45972-15.6438-24.47009-20.11304-37.91388-3.04858-9.17047-5.66382-18.242-7.88245-27.78461l-58.23798-250.4906c-1.79718-7.7301-1.39093-15.59711.5423-22.89545,1.68945-6.37793,6.47913-10.77454,12.672-12.42737,10.93274-2.91791,18.28528.3728,26.85608-4.80347,5.19318-3.13635,8.61169-8.29846,9.27924-13.60809.836-6.64966-1.26257-12.65088-6.03864-17.02588-3.93231-3.60217-8.97729-6.14197-14.61505-6.13928l-88.64673.04144c-5.86578.00275-11.16943,1.15839-16.58051,2.73248-15.71698,4.57214-26.78583,16.38361-33.03998,31.39148l-88.85846,213.22943-7.22546-15.68842c-2.00659,5.47546-3.93201,10.53131-7.05945,15.52197l13.93579,32.08887c.25818.59448.70081.6579.98401-.14636l100.54163-241.23041c1.9198-4.60626,4.56018-8.49084,7.69971-12.17285,5.11945-6.00397,12.05005-9.8446,19.76031-11.49652,3.79694-.81348,7.38428-1.52612,11.39154-1.53088l85.17291-.10077c5.95917-.00702,10.90356,3.92804,9.88654,9.00647-.32983,1.64697-1.5437,3.19568-3.31085,4.20447-4.64893,2.65393-12.72302.36493-24.10571,3.6319-10.45947,3.00201-18.18207,10.64838-21.01526,21.33246-2.49426,9.40607-2.87317,19.52289-.58429,29.36426l58.61334,252.02106c3.16077,13.59033,7.24603,26.75427,12.41931,39.53119,10.18597,25.1571,26.6524,46.80432,56.4046,45.96741,5.77222-.16241,14.94183,4.40912,12.22772,9.52271-3.15784,5.94946-16.93207,4.43616-22.73041,4.38739l-15.41565-.1297-44.5271-1.05817-16.17828-.17816c-5.76532-.06348-11.39893-.06213-17.16479-.00031l-16.65851.17871-45.99097,1.05438-17.25989.1571c-5.95099.0542-16.53339,1.1449-21.29633-2.9071-1.06378-.90497-1.81262-2.09216-1.76129-3.30341.21436-5.05731,7.98254-6.93866,12.45172-6.97101,7.79242-.0564,15.23407-.64905,22.50043-3.28772,15.63629-5.6781,21.67804-19.69324,21.63068-35.57623-.02563-8.60114-.85083-16.99512-2.85321-25.54639l-51.31415-219.13989c-.08868-.37866.08301-.84039-.09644-1.41516-.81274-.23602-.90259.16174-.9527.93536l-124.85175,293.92896c-1.25098,2.94495-5.60541,12.8468-8.24573,12.99969-3.06287.17731-7.31561-10.88995-8.67511-14.03119l-57.11688-131.96967-12.64441,3.00574,56.80457,131.24377c3.84937,8.89368,8.40924,22.71429,18.98712,24.37891v.47986h5.27838v-.50885c4.49579-.69928,8.24176-3.89252,10.80194-7.85138,3.06323-4.73676,5.31311-9.70648,7.59357-15.07379l109.18909-256.99591,43.04401,184.06995c2.09821,8.9726,2.56311,17.75439,2.06494,26.72803-1.35315,9.82056-5.42938,16.12201-15.10614,18.97778-10.71057,3.16077-16.11066.64093-25.13617,3.12372-4.53577,1.24768-8.65594,3.39301-11.71387,6.88806-6.64313,7.59277-5.72656,18.54608,2.11676,24.896,8.73138,7.06873,20.3974,5.77075,31.16656,5.65472l16.73737-.18036,45.33716-1.04626,18.05359-.18292c4.38684-.04443,8.60962-.04523,12.99646.00031l17.57208.18225,43.50983,1.04462,16.13843.18719c8.7594.10156,18.81799.97748,26.72241-3.02026,5.13599-2.5976,9.7627-7.27844,9.7627-13.28265h.4798v-5.27802h-.4798Z"/>
+          <path fill="currentColor" d="M190.80841,1301.31889c-36.31024-7.42841-70.35431-20.27759-100.48969-42.41083-30.67682-22.53088-53.31592-53.55908-65.4483-89.6875-9.62494-28.6618-12.73273-57.91809-11.66125-88.16003,2.89783-81.79364,44.22485-145.35443,118.55389-179.6933,43.21106-19.96283,92.84247-28.17334,140.31158-27.10303,42.25763.95282,85.58545,12.69067,125.12732,26.6864,10.82281,3.83069,10.00909-4.93726,16.21387-2.39282,1.27722.52374,2.4787,2.31183,2.85901,4.17139,1.34338,6.56879,1.68079,12.94452,1.68878,19.91089l.11456,100.13208c.00323,2.84875-1.78326,7.48193-4.20856,7.48553-2.927.00439-4.71033-4.92572-5.26733-7.6228-4.7301-22.90552-11.20428-44.60468-23.99835-64.38434-10.58618-16.36627-25.05408-29.12708-42.65228-37.52014-22.09839-10.53937-46.00421-13.8009-70.34247-14.50677-15.41937-.4472-30.31848.90247-45.23505,4.74078-40.5647,10.43799-71.84052,37.73511-90.7984,74.66339-9.46844,18.4436-15.68756,38.0835-19.20044,58.65405-5.31793,31.13989-5.40942,62.89508-.13403,94.03217,8.70685,51.39081,35.31628,98.93561,83.5921,122.05591l2.80469-12.8985c-44.84711-22.98993-68.01654-69.6637-74.83203-117.78851-4.24103-29.94635-3.58624-60.22101,2.40295-89.8833,3.07037-15.2063,7.72729-29.45984,14.29749-43.36554,18.46948-39.08997,51.05444-67.30078,94.16425-75.12988,10.61353-1.92749,20.92786-2.65784,31.68665-2.36548,39.81012,1.08185,78.63196,9.63739,102.32727,44.52716,12.71521,18.72235,18.86475,39.9696,23.4491,61.9248,2.06201,9.87512,8.41455,18.22186,18.66608,17.61188,9.73218-.5791,15.96576-10.51648,15.96088-18.83765l-.06061-102.67206c-.00403-6.8241-.54443-13.07983-1.51447-19.69562-1.02167-4.48529-2.5025-8.76471-5.95764-11.93433-6.08423-5.58136-15.24176-5.86151-22.35156-1.21936-37.67212-13.22107-77.56024-24.09528-117.72076-26.64441-2.52197-.1601-4.54633-.37427-6.7594-.37427-8.08612-.40625-16.96967-.41357-24.95245,0-51.23853-.15295-106.22266,13.70581-150.63776,40.67175-52.03851,31.59448-85.38043,79.69061-96.93719,139.51624-1.86017,9.62939-3.67719,19.75317-2.90918,29.49078-1.02338-.18805.0968,3.1723-.95966,3.83856v34.06677c.9668.62402.04584,3.61389.95966,3.3587,7.40906,111.30646,80.35883,179.90326,187.05035,201.21912l2.7984-12.4679Z"/>
+          <path fill="currentColor" d="M291.54449,1431.89671c-4.07745-.32983-7.96429-.22858-11.99133-.95337-17.57922-3.16376-23.44159-19.1684-22.93671-35.30255.24188-7.72998,1.1449-15.0708,2.90344-22.7066l38.5755-167.50031,14.85181,33.89136c1.41718-.53802,2.63898-1.6557,3.4408-3.08972l-.23529-20.88458-21.74017-50.26208-47.64044,207.06012c-2.00262,8.70404-2.73029,17.25671-2.71643,25.97351.02991,18.8634,7.39056,36.37848,26.01263,43.20636,14.12238,5.17804,21.21021.46008,28.30328,6.19952,1.91364,1.54846,2.88171,4.14978,1.57483,6.2926-3.4881,5.71912-14.26459,4.46576-19.74866,4.40533l-12.46295-.13733-42.1806-1.19391-24.51886.00043-43.11267,1.19617-12.01007.12988c-5.1178.0553-15.56299,1.44763-18.37482-4.78241-2.17279-4.81421,4.63672-9.09613,9.43536-9.0791,7.28564.02594,14.04034-1.50006,20.48413-5.11157,15.98975-8.96173,27.22302-26.80518,34.37604-43.35339,5.30737-12.27844,9.61438-24.95618,12.55334-38.18445l52.22772-235.07593c5.48718-24.69788,5.59265-58.92426-24.10028-66.99475-11.41919-3.10364-19.13251.45831-24.28656-6.24384-2.0755-2.69891-1.65137-6.19,1.20923-8.06909,1.87415-1.23114,4.09418-2.04736,6.61444-2.04602l94.22626.05005c3.76471.00201,7.10754.67676,10.65625,1.42249,7.83063,1.64569,14.5528,5.82996,19.55292,11.98816,2.89954,3.57104,5.28894,7.27423,7.14856,11.50696l8.4931,19.33136,12.9151.07605c.55475.0033.7674-.37042.54395-.87823l-10.60333-24.0899c-5.5011-12.49811-15.95386-23.85278-29.1709-28.41644-6.86664-2.37097-13.80884-3.59918-21.34167-3.60236l-92.47675-.03943c-5.17267-.0022-9.95978,1.70721-13.92798,4.43573-8.53217,5.8667-10.22754,17.06409-4.30304,25.41632,4.41931,6.23022,11.33447,9.6178,19.13568,10.0152,4.04651.20618,7.88281.16504,11.80396,1.16791,15.23462,3.89648,18.5506,18.47186,18.06012,32.44501-.22076,6.28931-.8089,12.31891-2.21167,18.62848l-52.58246,236.51245c-5.35974,24.1076-23.54089,76.3313-53.79333,76.44611-7.17633.02722-14.14282,2.43573-18.88922,7.79694-3.81689,4.31134-5.5036,9.5907-4.43066,15.60547,1.69019,9.47498,11.34436,15.31281,20.5827,15.67413,5.93945.2323,11.60315.16211,17.62927.0025l46.99286-1.24463,25.96661-.00525,46.5379,1.24213c6.48309.17303,12.58508.29767,18.96741-.03595,6.0108-.31421,11.75781-2.31061,16.05206-6.36707,7.07361-6.68195,7.5177-17.08594,1.11804-24.42078-4.28918-4.91595-10.5545-7.51343-17.15845-8.04767Z"/>
+        </svg>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html#work" class="nav__link">Work</a></li>
+        <li><a href="index.html#capabilities" class="nav__link">Capabilities</a></li>
+        <li><a href="index.html#approach" class="nav__link">Approach</a></li>
+        <li><a href="index.html#resume" class="nav__link">Resume</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#work" class="mobile-menu__link">Work</a>
+    <a href="index.html#capabilities" class="mobile-menu__link">Capabilities</a>
+    <a href="index.html#approach" class="mobile-menu__link">Approach</a>
+    <a href="index.html#resume" class="mobile-menu__link">Resume</a>
+    <a href="index.html#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- Case Hero -->
+  <section class="case-hero">
+    <div class="case-hero__bg">
+      <picture>
+                <source srcset="Site%20Media/Strongest%20Visuals/MULTISZN%20VIDEO%20STRONGEST%20VISUAL.webp" type="image/webp">
+                <img src="Site%20Media/Strongest%20Visuals/MULTISZN%20VIDEO%20STRONGEST%20VISUAL.jpg" alt="MultiSZN — Strongest Visual" class="case-hero__bg-img">
+              </picture>
+    </div>
+    <div class="container">
+      <div class="case-hero__content fade-in">
+        <a href="index.html#work" class="case-hero__back">&larr; Back to Work</a>
+        <span class="label case-hero__category">Creative Direction &middot; Visual Narrative</span>
+        <h1 class="heading-xl case-hero__title">MultiSZN</h1>
+        <p class="body-lg case-hero__subtitle">Visual direction for an artist rollout and brand-aligned music campaign</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Body -->
+  <div class="case-body">
+    <div class="container">
+
+      <!-- Intro -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Overview</span>
+        <h2 class="heading-md case-section__title">Creative Direction Across Music &amp; Brand</h2>
+        <p class="case-section__text">An official music video for recording artist MultiSZN, built in support of an upcoming 5-track EP release. The project integrated Emerald Eyes as a brand partner within the visual narrative — not as a product placement, but as part of the world.</p>
+      </section>
+
+      <!-- Creative Brief -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Creative Brief</span>
+        <h2 class="heading-md case-section__title">Concept &amp; Symbolism</h2>
+        <p class="case-section__text">The project had to serve two identities without either one subordinating the other — the video needed to feel native to MultiSZN's sonic tone while integrating Emerald Eyes organically into the world.</p>
+        <p class="case-section__text">I used generative AI in pre-production to build character-accurate treatment frames that clarified the visual direction before we shot anything — accelerating alignment with the artist and producer on tone, setting, and symbolic language.</p>
+      </section>
+
+      <!-- My Role -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">My Role</span>
+        <h2 class="heading-md case-section__title">Full Production Ownership</h2>
+        <p class="case-section__text">Full production ownership — concept development, AI-assisted treatment design, shot design, cinematography, on-set direction, editing, color grading, and delivery. Collaborated with ProdbyCuzzi on sonic-visual alignment throughout.</p>
+      </section>
+
+      <!-- Shot Design / Production -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Shot Design &amp; Production</span>
+        <h2 class="heading-md case-section__title">Visual Execution</h2>
+        <p class="case-section__text">Every frame reinforced the project's conceptual foundation — atmosphere over explanation, and a visual tone that held the tension between the artist's energy and the brand's restraint.</p>
+
+        <!-- Hero still -->
+        <div class="case-media">
+          <picture>
+                <source srcset="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Strongest%20Final%20Cinematic%20Still.webp" type="image/webp">
+                <img src="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Strongest%20Final%20Cinematic%20Still.jpg" alt="Strongest Final Cinematic Still" style="width: 100%; aspect-ratio: 2.39/1; object-fit: cover; object-position: center 40%; border-radius: 12px;">
+              </picture>
+        </div>
+
+        <!-- 2-3 supporting stills -->
+        <div class="case-media-grid case-media-grid--2" style="margin-top:16px;">
+          <picture>
+                <source srcset="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Cinematic%20Still%20%232.webp" type="image/webp">
+                <img src="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Cinematic%20Still%20%232.jpg" alt="Cinematic Still #2" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px;">
+              </picture>
+          <picture>
+                <source srcset="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Cinematic%20Still%20%233.webp" type="image/webp">
+                <img src="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Cinematic%20Still%20%233.jpg" alt="Cinematic Still #3" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px;">
+              </picture>
+        </div>
+        <p class="case-media__caption">Selected frames from the final piece</p>
+      </section>
+
+      <!-- Treatment -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Pre-Production</span>
+        <h2 class="heading-md case-section__title">Treatment &amp; Pre-Visualization</h2>
+        <p class="case-section__text">Generative AI produced character-accurate reference frames during pre-production — letting the team align on the visual world before committing to a shoot day. This compressed the decision cycle and eliminated ambiguity around tone, setting, and wardrobe.</p>
+
+        <div class="case-media">
+          <picture>
+                <source srcset="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Treatment%20Image%20%3A%20Pre-Visualization%20Frame.webp" type="image/webp">
+                <img src="Site%20Media/MultiSZN%20Video%20Remaining%20Media/Treatment%20Image%20%3A%20Pre-Visualization%20Frame.jpg" alt="Treatment Image / Pre-Visualization Frame" style="width: 100%; aspect-ratio: 9751/4951; object-fit: contain; border-radius: 12px;">
+              </picture>
+        </div>
+        <p class="case-media__caption">AI-assisted treatment visualization used during pre-production</p>
+      </section>
+
+      <!-- Editing / Color / Final -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Post-Production</span>
+        <h2 class="heading-md case-section__title">Editing &amp; Color</h2>
+        <p class="case-section__text">The edit preserved atmospheric density rather than rushing past it. Color grading locked the final piece into a cohesive tonal world that served both the artist's sonic identity and the brand's visual language.</p>
+      </section>
+
+      <!-- Embedded Video -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Final Piece</span>
+        <h2 class="heading-md case-section__title">The Video</h2>
+        <div class="case-media">
+          <div style="position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 12px; overflow: hidden;">
+            <iframe
+              src="https://www.youtube.com/embed/BAFuM-QhDXg"
+              title="MultiSZN — Final Music Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Takeaways -->
+      <section class="case-section fade-in">
+        <span class="label case-section__label">Takeaways</span>
+        <h2 class="heading-md case-section__title">What This Case Proves</h2>
+        <div class="proves-grid">
+          <div class="proves-item">
+            <div class="proves-item__title">Creative Direction</div>
+          </div>
+          <div class="proves-item">
+            <div class="proves-item__title">Visual Authorship</div>
+          </div>
+          <div class="proves-item">
+            <div class="proves-item__title">Campaign Aesthetics</div>
+          </div>
+          <div class="proves-item">
+            <div class="proves-item__title">Music &times; Brand Integration</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pull Quote -->
+      <div class="pull-quote fade-in">
+        <p class="pull-quote__text">One piece. Two identities. No compromise on either.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Case Navigation -->
+  <nav class="case-nav">
+    <div class="container">
+      <a href="arterra-wines.html" class="case-nav__item">
+        <div class="case-nav__direction">&larr; Previous Project</div>
+        <div class="case-nav__title">Arterra Wines</div>
+      </a>
+      <a href="emerald-eyes.html" class="case-nav__item case-nav__item--next">
+        <div class="case-nav__direction">View Flagship &rarr;</div>
+        <div class="case-nav__title">Emerald Eyes</div>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer__text">&copy; 2026 Grayson Murray. All rights reserved.</span>
+      <div class="footer__geo-mark" aria-hidden="true">
+        <img src="Cross.svg" class="geo-cross--static" alt="">
+      </div>
+      <span class="footer__text">Brand, Growth, &amp; Creative Direction</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
